@@ -452,6 +452,7 @@ console.log(parseInt("08", 8)); // 0 (interpreted as octal, 8 is not a valid oct
 ### 38. **String and Number Addition**
 
 When you mix strings and numbers with the `+` operator, JavaScript coerces the number to a string.
+(As seen in previous examples)
 
 ```javascript
 console.log(5 + "5"); // "55" (number is coerced to string and concatenated)
@@ -460,6 +461,7 @@ console.log("5" - 1); // 4 (string is coerced to number and subtracted)
 
 ### 39. **Automatic Semicolon Insertion**
 
+See #23 but expanded on here.
 JavaScript sometimes inserts semicolons automatically, which can change the behavior of code.
 
 ```javascript
@@ -583,6 +585,7 @@ console.log(Number.isNaN("hello")); // false (no coercion, "hello" is not NaN)
 ### 50. **Function Declarations vs. Function Expressions**
 
 Function declarations are hoisted, while function expressions are not.
+Worth circling back to #16.
 
 ```javascript
 console.log(declaredFunction()); // "Declared!"
